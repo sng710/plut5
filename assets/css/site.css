@@ -3597,3 +3597,40 @@ dialog[open].is-open {
     max-block-size: 228px !important;
   }
 }
+
+/* ===== Top main image frame fix: remove the empty black space under the photo ===== */
+.final-black-page #hero .museum-cover {
+  min-block-size: 0 !important;
+  block-size: auto !important;
+  height: auto !important;
+  align-self: center !important;
+  display: block !important;
+  aspect-ratio: 1275 / 866 !important;
+}
+
+.final-black-page #hero .museum-cover .hero-photo {
+  inline-size: 100% !important;
+  block-size: 100% !important;
+  height: 100% !important;
+  min-block-size: 0 !important;
+  aspect-ratio: 1275 / 866 !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+.final-black-page #hero .museum-cover .hero-photo img {
+  inline-size: 100% !important;
+  block-size: 100% !important;
+  height: 100% !important;
+  max-block-size: none !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+}
+
+@media (max-width: 780px) {
+  .final-black-page #hero .museum-cover,
+  .final-black-page #hero .museum-cover .hero-photo {
+    aspect-ratio: 1275 / 866 !important;
+  }
+}
