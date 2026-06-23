@@ -3538,3 +3538,26 @@ dialog[open].is-open {
     min-block-size: 160px !important;
   }
 }
+
+
+/* Fixed wedding photo: static preview, full image visible, no click/zoom behavior */
+.final-black-page .fixed-wedding-photo,
+.gallery-card.fixed-wedding-photo {
+  cursor: default !important;
+}
+
+.final-black-page .fixed-wedding-photo img,
+.gallery-card.fixed-wedding-photo img,
+.refined-gallery-card.fixed-wedding-photo img {
+  object-fit: contain !important;
+  object-position: center top !important;
+}
+
+.gallery-card.fixed-wedding-photo:hover {
+  transform: none !important;
+}
+
+.gallery-card.fixed-wedding-photo:hover img,
+.final-black-page .fixed-wedding-photo:hover img {
+  transform: none !important;
+}
