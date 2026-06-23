@@ -3561,3 +3561,39 @@ dialog[open].is-open {
 .final-black-page .fixed-wedding-photo:hover img {
   transform: none !important;
 }
+
+/* Top main image alignment: keep the frame fitted tightly to the actual image */
+.final-black-page .museum-cover {
+  min-block-size: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.final-black-page .museum-cover .hero-photo {
+  inline-size: 100% !important;
+  block-size: auto !important;
+  min-block-size: 0 !important;
+  display: block !important;
+  margin: 0 !important;
+}
+
+.final-black-page .museum-cover .hero-photo img {
+  inline-size: 100% !important;
+  block-size: auto !important;
+  max-block-size: min(64vh, 560px) !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+}
+
+@media (max-width: 780px) {
+  .final-black-page .museum-cover .hero-photo img {
+    max-block-size: 250px !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .final-black-page .museum-cover .hero-photo img {
+    max-block-size: 228px !important;
+  }
+}
